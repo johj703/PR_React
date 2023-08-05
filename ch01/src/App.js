@@ -10,10 +10,14 @@ function App() {
     console.log("I run only once.");
   }, []);
   useEffect(() => {
-    if (keyword !== "" && keyword.length > 5) {
-      console.log("SEARCH FOR", keyword);
-    }
+    console.log("I run when 'keyword' changes.");
   }, [keyword]);
+  useEffect(() => {
+    console.log("I run when 'counter' changes.");
+  }, [counter]);
+  useEffect(() => {
+    console.log("I run when keyword & counter change");
+  }, [keyword, counter]);
   // State를 변경할 때, 모든 코드들은 항상 다시 실행된다
   return (
     <div>
