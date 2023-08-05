@@ -10,6 +10,9 @@ function App() {
   useEffect(() => {
     console.log("call the API");
   }, []);
+  useEffect(() => {
+    console.log("SEARCH FOR", keyword);
+  }, [keyword]);
   // State를 변경할 때, 모든 코드들은 항상 다시 실행된다
   return (
     <div>
