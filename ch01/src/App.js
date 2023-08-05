@@ -13,7 +13,12 @@ function App() {
   // State를 변경할 때, 모든 코드들은 항상 다시 실행된다
   return (
     <div>
-      <input onChange={onChange} type="text" placeholder="Search here" />
+      <input
+        value={keyword}
+        onChange={onChange}
+        type="text"
+        placeholder="Search here"
+      />
       <h1>{counter}</h1>
       <button onClick={onClick}>click me</button>
     </div>
