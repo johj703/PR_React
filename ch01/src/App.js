@@ -6,6 +6,7 @@ function Hello() {
   }
   function hiFn() {
     console.log("created :)");
+    return byFn;
   }
   useEffect(hiFn, []);
   return <h1>Hello</h1>;
