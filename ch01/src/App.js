@@ -5,9 +5,11 @@ function App() {
   const onChange = (event) => setToDo(event.target.value);
   const onSubmit = (event) => {
     event.preventDefault();
-    console.log(toDo);
+    if (toDo === "") {
+      return;
+    }
+    setToDo("");
   };
-  console.log(toDo);
   return (
     <div>
       <form onSubmit={onSubmit}>
