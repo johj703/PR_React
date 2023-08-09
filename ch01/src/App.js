@@ -9,7 +9,14 @@ function App() {
     if (toDo === "") {
       return;
     }
+    /*
+    수정하는 함수를 사용할 때 두 가지 옵션이 있음
+    1. 함수를 보낼 수 있음.
+    */
     setToDos((currentArray) => [toDo, ...currentArray]);
+    /*
+    2. ("") 형태(지정한 data를 가지고 있다.)로 보낼 수 있음.
+    */
     setToDo("");
   };
   return (
