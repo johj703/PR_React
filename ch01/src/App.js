@@ -15,6 +15,13 @@ function App() {
     <div>
       <h1>The Coins!!</h1>
       {loading ? <strong>Loading...</strong> : null}
+      <ul>
+        {coins.map((coin) => (
+          <li>
+            {coin.name} ({coin.symbol}): {coin.quotes.USD.price}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
