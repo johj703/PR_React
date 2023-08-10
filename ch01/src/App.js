@@ -18,7 +18,7 @@ function App() {
       <ul>
         {coins.map((coin) => (
           <li>
-            {coin.name} ({coin.symbol}): {coin.quotes.USD.price} USD
+            {coin.name} ({coin.symbol}): ${coin.quotes.USD.price} USD
           </li>
         ))}
       </ul>
